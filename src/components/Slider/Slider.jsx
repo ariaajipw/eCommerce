@@ -16,7 +16,7 @@ const Slider = () => {
     setCurrentSLide(currentSlide === 0 ? 2 : (prev) => prev - 1);
   };
   const nextSlide = () => {
-    setCurrentSLide(currentSlide === 2 ? 0 : (prev) => prev + 1);
+    setCurrentSLide(currentSlide === 0 ? 2 : (prev) => prev - 1);
   };
 
   return (
