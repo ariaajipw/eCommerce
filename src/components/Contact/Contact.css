@@ -7,4 +7,23 @@
 }
 .contact .wrapper {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .wrapper input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.contact .wrapper button {
+  padding: 10px;
+  color: white;
+  background: #333;
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+.contact .wrapper .icon {
+  display: flex;
+  gap: 10px;
 }/*# sourceMappingURL=Contact.css.map */

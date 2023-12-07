@@ -1,8 +1,8 @@
 import React from "react";
-import "./FeaturedProducts.css";
 import Card from "../Card/Card";
+import "./List.css";
 
-const FeaturedProducts = ({ type }) => {
+const List = () => {
   const data = [
     {
       id: 1,
@@ -43,23 +43,12 @@ const FeaturedProducts = ({ type }) => {
   ];
 
   return (
-    <div className="featuredProducts">
-      <div className="top">
-        <h1>{type} products</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-          velit porro nemo pariatur soluta perferendis, vitae autem quae facilis
-          nulla unde eveniet praesentium fugit quia eligendi voluptate numquam
-          optio aut?
-        </p>
-      </div>
-      <div className="bottom">
-        {data.map((item) => (
-          <Card item={item} key={item.id} />
-        ))}
-      </div>
+    <div className="list">
+      {data?.map((item) => (
+        <Card item={item} key={item.id} />
+      ))}
     </div>
   );
 };
 
-export default FeaturedProducts;
+export default List;

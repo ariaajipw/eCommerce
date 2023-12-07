@@ -8,15 +8,15 @@ const Slider = () => {
 
   const data = [
     "https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/7503545/pexels-photo-7503545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/9558266/pexels-photo-9558266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/7872821/pexels-photo-7872821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/3062593/pexels-photo-3062593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
 
   const prevSlide = () => {
     setCurrentSLide(currentSlide === 0 ? 2 : (prev) => prev - 1);
   };
   const nextSlide = () => {
-    setCurrentSLide(currentSlide === 0 ? 2 : (prev) => prev - 1);
+    setCurrentSLide(currentSlide === 2 ? 0 : (prev) => prev + 1);
   };
 
   return (
@@ -33,7 +33,7 @@ const Slider = () => {
         <div className="icon" onClick={prevSlide}>
           <WestOutlinedIcon />
         </div>
-        <div className="icon" onclick={nextSlide}>
+        <div className="icon" onClick={nextSlide}>
           <EastOutlinedIcon />
         </div>
       </div>
